@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import Footer from 'components/Footer'
+
 function PageLayout() {
   return (
     <>
@@ -14,7 +16,7 @@ function PageLayout() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div>Navbar</div>
               <div>Content Body</div>
-              <div>Footer</div>
+              <Footer />
             </div>
           </div>
         </div>
