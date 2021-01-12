@@ -1,10 +1,14 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function Appointments() {
   return (
-    <div>
-      <h1>Appointments Page</h1>
-    </div>
+    <PageLayout>
+      <div>
+        <h1>Appointments Page</h1>
+      </div>
+    </PageLayout>
   )
 }
 

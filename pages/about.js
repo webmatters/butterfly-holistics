@@ -1,10 +1,14 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function About() {
   return (
-    <div>
-      <h1>About page</h1>
-    </div>
+    <PageLayout>
+      <div>
+        <h1>About page</h1>
+      </div>
+    </PageLayout>
   )
 }
 

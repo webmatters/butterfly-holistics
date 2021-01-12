@@ -1,10 +1,12 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function services() {
   return (
-    <div>
-      <h1>Butterfly Holistics Services</h1>
-    </div>
+    <PageLayout>
+      <h1>Services page</h1>
+    </PageLayout>
   )
 }
 

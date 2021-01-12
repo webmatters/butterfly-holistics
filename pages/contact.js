@@ -1,10 +1,14 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function contact() {
   return (
-    <div>
-      <h1>Contact page</h1>
-    </div>
+    <PageLayout>
+      <div>
+        <h1>Contact page</h1>
+      </div>
+    </PageLayout>
   )
 }
 

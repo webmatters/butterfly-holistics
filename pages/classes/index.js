@@ -1,10 +1,12 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function classes() {
   return (
-    <div>
-      <h1>Classes List page</h1>
-    </div>
+    <PageLayout>
+      <h1>Classes List Page</h1>
+    </PageLayout>
   )
 }
 

@@ -1,10 +1,14 @@
 import React from 'react'
 
+import PageLayout from 'components/PageLayout'
+
 function reiki() {
   return (
-    <div>
-      <h1>Reiki page</h1>
-    </div>
+    <PageLayout>
+      <div>
+        <h1>Reiki page</h1>
+      </div>
+    </PageLayout>
   )
 }
 
