@@ -34,13 +34,15 @@ export default function Hero() {
               >
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
-                      <span className="sr-only">Butterfly Holistics</span>
-                      <img
-                        className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                      />
-                    </a>
+                    <Link href="/">
+                      <a>
+                        <span className="sr-only">Butterfly Holistics</span>
+                        <img
+                          className="h-8 w-auto sm:h-10"
+                          src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
+                        />
+                      </a>
+                    </Link>
                     <div className="-mr-2 flex items-center md:hidden">
                       <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -71,47 +73,37 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Services
-                  </a>
+                  <Link href="/services">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Services
+                    </a>
+                  </Link>
+                  <Link href="/about">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      About
+                    </a>
+                  </Link>
+                  <Link href="/appointments">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Appointments
+                    </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    About
-                  </a>
-
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Appointments
-                  </a>
-
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Classes
-                  </a>
-
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Store
-                  </a>
-
-                  <a
-                    href="#"
-                    className="font-medium text-blue-600 hover:text-blue-500"
-                  >
-                    Contact
-                  </a>
+                  <Link href="/classes">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Classes
+                    </a>
+                  </Link>
+                  <Link href="/store">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Store
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="font-medium text-blue-600 hover:text-blue-500">
+                      Contact
+                    </a>
+                  </Link>
                 </div>
               </nav>
             </div>
@@ -177,54 +169,56 @@ export default function Hero() {
                     aria-labelledby="main-menu"
                   >
                     <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-                      <a
-                        href="#"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                        role="menuitem"
-                      >
-                        Services
-                      </a>
-
-                      <a
-                        href="#"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                        role="menuitem"
-                      >
-                        About
-                      </a>
-
-                      <a
-                        href="#"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                        role="menuitem"
-                      >
-                        Appointments
-                      </a>
-
-                      <a
-                        href="#"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                        role="menuitem"
-                      >
-                        Classes
-                      </a>
-
-                      <a
-                        href="#"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                        role="menuitem"
-                      >
-                        Store
-                      </a>
+                      <Link href="/services">
+                        <a
+                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Services
+                        </a>
+                      </Link>
+                      <Link href="/about">
+                        <a
+                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          About
+                        </a>
+                      </Link>
+                      <Link href="/appointments">
+                        <a
+                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Appointments
+                        </a>
+                      </Link>
+                      <Link href="/classes">
+                        <a
+                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Classes
+                        </a>
+                      </Link>
+                      <Link href="/store">
+                        <a
+                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Store
+                        </a>
+                      </Link>
                     </div>
                     <div role="none">
-                      <a
-                        href="#"
-                        className="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100"
-                        role="menuitem"
-                      >
-                        Contact
-                      </a>
+                      <Link href="/contact">
+                        <a
+                          className="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100"
+                          role="menuitem"
+                        >
+                          Contact
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -233,7 +227,7 @@ export default function Hero() {
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">Take control </span>
                   <span className="block text-blue-500 xl:inline">
                     of your health
@@ -246,20 +240,18 @@ export default function Hero() {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 btn"
-                    >
-                      Schedule Now
-                    </a>
+                    <Link href="/appointments">
+                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 btn">
+                        Schedule Now
+                      </a>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 btn"
-                    >
-                      Learn More
-                    </a>
+                    <Link href="/services">
+                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 btn">
+                        Learn More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -268,7 +260,7 @@ export default function Hero() {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            class="hidden lg:inline-block h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="hidden lg:inline-block h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="https://images.unsplash.com/photo-1527380992061-b126c88cbb41?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80"
             alt=""
           />
