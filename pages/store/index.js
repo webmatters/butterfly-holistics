@@ -1,13 +1,12 @@
 import React from 'react'
 
 import PageLayout from 'components/PageLayout'
+import PageHeader from 'components/PageHeader'
 
 function store() {
   return (
     <PageLayout>
-      <div>
-        <h1>Store page</h1>
-      </div>
+      <PageHeader />
     </PageLayout>
   )
 }

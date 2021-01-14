@@ -1,13 +1,12 @@
 import React from 'react'
 
 import PageLayout from 'components/PageLayout'
+import PageHeader from 'components/PageHeader'
 
 function Appointments() {
   return (
     <PageLayout>
-      <div>
-        <h1>Appointments Page</h1>
-      </div>
+      <PageHeader />
     </PageLayout>
   )
 }

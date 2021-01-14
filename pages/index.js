@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Hero from 'components/Hero'
 import Footer from 'components/Footer'
+import WhyButterfly from 'components/WhyButterfly'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <div>Content</div>
+      <WhyButterfly />
       <Footer />
     </div>
   )
