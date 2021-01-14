@@ -1,6 +1,9 @@
 import Head from 'next/head'
 
-function PageLayout() {
+import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
+
+function PageLayout({ children }) {
   return (
     <>
       <Head>
@@ -9,13 +12,12 @@ function PageLayout() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-white">
-        <div className="bg-gray-50">
-          <div className="relative">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div>Navbar</div>
-              <div>Content Body</div>
-              <div>Footer</div>
-            </div>
+        <div className="relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Navbar />
+
+            <div>{children}</div>
+            <Footer />
           </div>
         </div>
       </div>
