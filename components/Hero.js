@@ -78,11 +78,6 @@ export default function Hero() {
                       Services
                     </a>
                   </Link>
-                  <Link href="/about">
-                    <a className="font-medium text-gray-500 hover:text-gray-900">
-                      About
-                    </a>
-                  </Link>
                   <Link href="/appointments">
                     <a className="font-medium text-gray-500 hover:text-gray-900">
                       Appointments
@@ -175,14 +170,6 @@ export default function Hero() {
                           role="menuitem"
                         >
                           Services
-                        </a>
-                      </Link>
-                      <Link href="/about">
-                        <a
-                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          role="menuitem"
-                        >
-                          About
                         </a>
                       </Link>
                       <Link href="/appointments">
