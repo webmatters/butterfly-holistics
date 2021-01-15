@@ -11,12 +11,11 @@ function PageLayout({ children }) {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-white">
+      <div className="bg-blue-300">
         <div className="relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <Navbar />
-
-            <div>{children}</div>
+            {children}
             <Footer />
           </div>
         </div>
