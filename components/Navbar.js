@@ -8,17 +8,13 @@ function Navbar(props) {
 
   return (
     <div className="relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center  py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
               <a>
                 <span className="sr-only">Butterfly Holistics</span>
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                  alt=""
-                />
+                <img className="h-10 w-auto sm:h-28" src="BHLogo.png" alt="" />
               </a>
             </Link>
           </div>
@@ -53,7 +49,7 @@ function Navbar(props) {
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 type="button"
-                className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none "
+                className="group bg-white rounded-md text-gray-600 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none "
               >
                 <span>Services</span>
                 {/*
@@ -97,7 +93,7 @@ function Navbar(props) {
                         <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           {/* Heroicon name: heart */}
                           <svg
-                            className="flex-shrink-0 h-6 w-6 text-blue-600"
+                            className="flex-shrink-0 h-6 w-6 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -127,7 +123,7 @@ function Navbar(props) {
                         <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           {/* Heroicon name: hand */}
                           <svg
-                            className="flex-shrink-0 h-6 w-6 text-blue-600"
+                            className="flex-shrink-0 h-6 w-6 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -160,7 +156,7 @@ function Navbar(props) {
                         >
                           {/* Heroicon name: play */}
                           <svg
-                            className="flex-shrink-0 h-6 w-6 text-gray-400"
+                            className="flex-shrink-0 h-6 w-6 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -191,7 +187,7 @@ function Navbar(props) {
                         >
                           {/* Heroicon name: book-open */}
                           <svg
-                            className="flex-shrink-0 h-6 w-6 text-gray-400"
+                            className="flex-shrink-0 h-6 w-6 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -214,17 +210,17 @@ function Navbar(props) {
             </div>
 
             <Link href="/appointments">
-              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a className="text-base font-medium text-gray-600 hover:text-gray-900">
                 Appointments
               </a>
             </Link>
             <Link href="/classes">
-              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a className="text-base font-medium text-gray-600 hover:text-gray-900">
                 Classes
               </a>
             </Link>
             <Link href="/store">
-              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a className="text-base font-medium text-gray-600 hover:text-gray-900">
                 Store
               </a>
             </Link>
@@ -236,7 +232,7 @@ function Navbar(props) {
             >
               {/* Heroicon name: phone */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -257,7 +253,7 @@ function Navbar(props) {
             </a>
 
             <Link href="/contact">
-              <a className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+              <a className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-secondary hover:bg-primary-dark">
                 Contact
               </a>
             </Link>
@@ -288,12 +284,13 @@ function Navbar(props) {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>
-                  <img
+                <div className="text-primary text-lg">
+                  Butterfly Holistics
+                  {/* <img
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                     alt="Workflow"
-                  />
+                  /> */}
                 </div>
                 <div className="-mr-2">
                   <button
@@ -327,7 +324,7 @@ function Navbar(props) {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* Heroicon name: chart-bar */}
                       <svg
-                        className="flex-shrink-0 h-6 w-6 text-blue-600"
+                        className="flex-shrink-0 h-6 w-6 text-primary"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -351,7 +348,7 @@ function Navbar(props) {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* Heroicon name: cursor-click */}
                       <svg
-                        className="flex-shrink-0 h-6 w-6 text-blue-600"
+                        className="flex-shrink-0 h-6 w-6 text-primary"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -375,7 +372,7 @@ function Navbar(props) {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* Heroicon name: shield-check */}
                       <svg
-                        className="flex-shrink-0 h-6 w-6 text-blue-600"
+                        className="flex-shrink-0 h-6 w-6 text-primary"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -399,7 +396,7 @@ function Navbar(props) {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* Heroicon name: view-grid */}
                       <svg
-                        className="flex-shrink-0 h-6 w-6 text-blue-600"
+                        className="flex-shrink-0 h-6 w-6 text-primary"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -424,7 +421,7 @@ function Navbar(props) {
             <div className="py-6 px-5 space-y-6">
               <div>
                 <Link href="/contact">
-                  <a className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                  <a className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-primary hover:bg-primary-dark">
                     Contact
                   </a>
                 </Link>
