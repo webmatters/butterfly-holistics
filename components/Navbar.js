@@ -17,7 +17,7 @@ function Navbar(props) {
   const renderLinks = () => {
     return navLinks.map(navLink => (
       <Link href={navLink.path} key={navLink.id}>
-        <a className="border-transparent text-gray-500 hover:text-primary-dark hover:border-tertiary whitespace-nowrap py-1 px-1 border-b-2 font-medium text-lg">
+        <a className="border-transparent text-gray-500 hover:text-primary-light transform hover:scale-105 whitespace-nowrap py-1 px-1 border-b-2 font-medium text-sm lg:text-lg">
           {navLink.name}
         </a>
       </Link>
@@ -26,7 +26,7 @@ function Navbar(props) {
 
   const renderMobileLinks = () => {
     return navLinks.map(navLink => (
-      <Link href={navLink.path}>
+      <Link href={navLink.path} key={navLink.id}>
         <span className="border-t border-gray-100 pt-2">
           <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
             <span className="ml-3 text-base font-medium text-gray-900">
@@ -41,7 +41,7 @@ function Navbar(props) {
   return (
     <div className="relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center  py-4 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center  py-4 md:space-x-10">
           {/* Brand logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
@@ -63,7 +63,7 @@ function Navbar(props) {
           </div>
 
           {/* hamburger menu to open Mobile Nav */}
-          <div className="-mr-2 -my-2 md:hidden">
+          <div className="-mr-2 -my-2 sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -108,7 +108,7 @@ function Navbar(props) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10">
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">

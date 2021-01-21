@@ -3,6 +3,10 @@ import Head from 'next/head'
 import PageLayout from 'components/PageLayout'
 import Hero from 'components/Hero'
 import WhyButterfly from 'components/WhyButterfly'
+import Divider from 'components/Divider'
+import ServiceSection from 'components/ServiceSection'
+import Testimonials from 'components/Testimonials'
+import ClassesSection from 'components/ClassesSection'
 
 export default function Home() {
   return (
@@ -15,6 +19,10 @@ export default function Home() {
       <PageLayout>
         <Hero />
         <WhyButterfly />
+        <Testimonials />
+        <ServiceSection />
+        <Divider />
+        <ClassesSection />
       </PageLayout>
     </>
   )
