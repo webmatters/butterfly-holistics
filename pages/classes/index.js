@@ -7,6 +7,7 @@ function classes() {
   return (
     <PageLayout>
       <PageHeader />
+      <div>CLASSES PAGE</div>
     </PageLayout>
   )
 }

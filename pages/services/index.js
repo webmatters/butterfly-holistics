@@ -7,6 +7,7 @@ function services() {
   return (
     <PageLayout>
       <PageHeader />
+      <div>Services Page</div>
     </PageLayout>
   )
 }
