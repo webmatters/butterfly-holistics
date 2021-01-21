@@ -7,6 +7,7 @@ function Appointments() {
   return (
     <PageLayout>
       <PageHeader />
+      <div>Appointments Page</div>
     </PageLayout>
   )
 }

@@ -7,6 +7,7 @@ function store() {
   return (
     <PageLayout>
       <PageHeader />
+      <div>Store Page</div>
     </PageLayout>
   )
 }
