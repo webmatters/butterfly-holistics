@@ -8,7 +8,7 @@ import ServiceSection from 'components/ServiceSection'
 import Testimonials from 'components/Testimonials'
 import ClassesSection from 'components/ClassesSection'
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Head>
@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <PageLayout>
         <Hero />
         <WhyButterfly />
@@ -27,3 +28,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
