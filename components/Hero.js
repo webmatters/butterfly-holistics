@@ -13,10 +13,10 @@ function Hero() {
     >
       <div className="w-2/3 pl-12">
         <p className="text-4xl tracking-wide text-tertiary font-serif animate-move-in-left">
-          Take Control of Your Health
+          Take Control of Your Wellbeing
         </p>
         <p className="mt-3 uppercase text-lg tracking-wide animate-move-in-right">
-          Balance your energy and Balance your life
+          Balance Your Energy, Change Your Life
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-full shadow animate-move-in-bottom">
