@@ -8,11 +8,11 @@ function Navbar() {
   const [bannerOpen, setBannerOpen] = useState(true)
 
   const navLinks = [
-    { id: '1', path: '/about', name: 'About' },
-    { id: '2', path: '/services', name: 'Services' },
-    { id: '3', path: '/appointments', name: 'Appointments' },
-    { id: '4', path: '/classes', name: 'Classes' },
-    { id: '5', path: '/store', name: 'Store' },
+    { id: '1', path: '/services', name: 'Services' },
+    { id: '2', path: '/appointments', name: 'Appointments' },
+    { id: '3', path: '/classes', name: 'Classes' },
+    { id: '4', path: '/about', name: 'About' },
+    { id: '5', path: '/resources', name: 'Resources' },
     { id: '6', path: '/contact', name: 'Contact' },
   ]
 
