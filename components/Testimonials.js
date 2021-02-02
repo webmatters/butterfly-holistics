@@ -1,10 +1,10 @@
 export default function Testimonials(props) {
   return (
     <section className="bg-primary">
-      <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
-        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-primary-dark lg:pr-16">
+      <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-16 text-center">
+        <div className="pt-6 lg:py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-primary-dark lg:pr-16">
           <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
-            <div className="relative text-lg font-medium text-white md:flex-grow">
+            <div className="relative text-base font-medium text-white md:flex-grow">
               <svg
                 className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-primary-light"
                 fill="currentColor"
@@ -26,7 +26,7 @@ export default function Testimonials(props) {
               </p>
             </div>
             <footer className="mt-8">
-              <div className="flex">
+              <div className="flex justify-center">
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
                   <img
                     className="h-12 w-12 rounded-full"
@@ -46,9 +46,9 @@ export default function Testimonials(props) {
             </footer>
           </blockquote>
         </div>
-        <div className="py-12 px-4 border-t-2 border-primary sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+        <div className="py-6 px-4 border-t-2 border-primary sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
           <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
-            <div className="relative text-lg font-medium text-white md:flex-grow">
+            <div className="relative text-base font-medium text-white md:flex-grow">
               <svg
                 className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-primary-light"
                 fill="currentColor"
@@ -66,7 +66,7 @@ export default function Testimonials(props) {
               </p>
             </div>
             <footer className="mt-8">
-              <div className="flex">
+              <div className="flex justify-center">
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
                   <img
                     className="h-12 w-12 rounded-full"

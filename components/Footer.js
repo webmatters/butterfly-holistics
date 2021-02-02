@@ -22,7 +22,10 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-gray-100" aria-labelledby="footerHeading">
+    <footer
+      className="bg-gray-100 lg:px-8 text-center"
+      aria-labelledby="footerHeading"
+    >
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
