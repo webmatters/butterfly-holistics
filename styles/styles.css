@@ -1,3 +1,26 @@
 .btn:active {
   transform: scale(0.98);
 }
+
+.hero-image {
+  height: 700px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 143, 203, 0.8),
+      rgba(0, 143, 203, 0.7),
+      rgba(0, 143, 203, 0.4)
+    ),
+    url('/butterfly-hero.jpg');
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image {
+    height: 550px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 143, 203, 0.5),
+        rgba(0, 143, 203, 0.5)
+      ),
+      url('/butterfly-hero-mobile.jpg');
+  }
+}

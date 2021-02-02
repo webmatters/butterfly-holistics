@@ -64,7 +64,7 @@ function Footer() {
                 type="email"
                 name="emailAddress"
                 id="emailAddress"
-                autocomplete="email"
+                autoComplete="email"
                 required
                 className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
                 placeholder="Enter your email"
