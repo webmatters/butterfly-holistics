@@ -4,12 +4,12 @@ import Link from 'next/link'
 function Hero() {
   return (
     <div
-      className="max-w-7xl mx-auto text-white bg-no-repeat bg-left flex items-center"
-      style={{
-        height: '550px',
-        backgroundImage:
-          "linear-gradient(to right, rgba(0, 143, 203, 0.8), rgba(0, 143, 203, 0.7), rgba(0, 143, 203, 0.2)), url('butterfly-hero.jpg')",
-      }}
+      className="max-w-7xl mx-auto text-white bg-no-repeat bg-left flex items-center hero-image"
+      // style={{
+      //   height: '550px',
+      //   backgroundImage:
+      //     "linear-gradient(to right, rgba(0, 143, 203, 0.8), rgba(0, 143, 203, 0.7), rgba(0, 143, 203, 0.2)), url('butterfly-hero.jpg')",
+      // }}
     >
       <div className="w-2/3 pl-12">
         <p className="text-4xl tracking-wide text-tertiary font-serif animate-move-in-left">

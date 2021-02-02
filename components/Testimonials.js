@@ -14,9 +14,15 @@ export default function Testimonials(props) {
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.
+                Working consistently with Valerie is one of the TOP TWO things I
+                did for my business and myself personally... Before seeing
+                Valerie, I was able to work on my mindset and know things
+                intellectually but I was still struggling, so I knew the blocks
+                and areas that needed help were on the subconscious and
+                energetic level. Valerie helps me clear these blocks so I can
+                fully integrate and be whole and free from all the junk holding
+                me back. I now have a sense of calm, groundedness, and success
+                that I’ve never experienced before in my life..
               </p>
             </div>
             <footer className="mt-8">
@@ -24,13 +30,13 @@ export default function Testimonials(props) {
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
                   <img
                     className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    src="Sarah_M.jpg"
+                    alt="Sarah M."
                   />
                 </div>
                 <div className="ml-4">
                   <div className="text-base font-medium text-white">
-                    Judith Black
+                    Sarah M.
                   </div>
                   <div className="text-base font-medium text-primary-lightest">
                     Holly Springs, NC
@@ -51,10 +57,12 @@ export default function Testimonials(props) {
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis. Nemo expedita
-                voluptas culpa sapiente alias molestiae.
+                I recently attended two workshops with Butterfly Holistics.
+                Valerie is amazing, so knowledgeable about the human body and a
+                healer. Not only did I learn specific skills to incorporate into
+                my massage practice, I also benefited from the work as we
+                practiced during class. I am better for attending, body, mind
+                and spirit and will take more classes from her.
               </p>
             </div>
             <footer className="mt-8">
@@ -62,16 +70,16 @@ export default function Testimonials(props) {
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
                   <img
                     className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    src="Helen.jpg"
+                    alt="Helen R."
                   />
                 </div>
                 <div className="ml-4">
                   <div className="text-base font-medium text-white">
-                    Joseph Rodriguez
+                    Helen R.
                   </div>
                   <div className="text-base font-medium text-primary-lightest">
-                    Apex, NC
+                    Holly Springs, NC
                   </div>
                 </div>
               </div>

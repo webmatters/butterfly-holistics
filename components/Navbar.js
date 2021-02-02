@@ -43,9 +43,11 @@ function Navbar() {
   return (
     <div className="relative bg-white">
       <div className="max-w-7xl mx-auto ">
+        {/* Covid Banner */}
         {bannerOpen && (
           <CovidBanner toggleBanner={setBannerOpen} bannerOpen={bannerOpen} />
         )}
+
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center  py-4 md:space-x-10">
             {/* Brand logo */}
@@ -55,7 +57,7 @@ function Navbar() {
                   <span className="sr-only">Butterfly Holistics</span>
 
                   <img
-                    className="hidden lg:inline h-20 w-20 mr-3"
+                    className="inline h-20 w-20 mr-3"
                     src="butterfly-logo-icon.png"
                     alt="Butterfly Icon"
                   />
@@ -124,12 +126,12 @@ function Navbar() {
                             <span className="sr-only">Butterfly Holistics</span>
 
                             <img
-                              className="hidden md:inline h-20 w-20 mr-3"
+                              className="inline h-20 w-20 mr-3"
                               src="butterfly-logo-icon.png"
                               alt="Butterfly icon"
                             />
                             <img
-                              className="md:inline h-14 w-auto "
+                              className="inline h-14 w-auto "
                               src="butterfly-logo-words.png"
                               alt="Butterfly Holistics logo"
                             />
