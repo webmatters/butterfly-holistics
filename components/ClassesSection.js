@@ -3,13 +3,13 @@ import Link from 'next/link'
 function ClassesSection(props) {
   return (
     <div className="mt-10 mb-10 py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 text-center">
         <div className="lg:text-center">
           <h2 className="text-base text-primary font-semibold tracking-wide uppercase">
             Classes
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-700 sm:text-4xl font-serif">
-            Learn Techniques for Self Care
+          <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-700 sm:text-4xl">
+            Learn Self Care Tools
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam

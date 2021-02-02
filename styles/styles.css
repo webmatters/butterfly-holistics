@@ -3,12 +3,12 @@
 }
 
 .hero-image {
-  height: 700px;
+  height: 650px;
   background-image: linear-gradient(
       to right,
-      rgba(0, 143, 203, 0.8),
-      rgba(0, 143, 203, 0.7),
-      rgba(0, 143, 203, 0.4)
+      rgba(0, 143, 203, 0.5),
+      rgba(0, 143, 203, 0.5),
+      rgba(0, 143, 203, 0.5)
     ),
     url('/butterfly-hero.jpg');
 }
@@ -18,9 +18,10 @@
     height: 550px;
     background-image: linear-gradient(
         to right,
-        rgba(0, 143, 203, 0.5),
-        rgba(0, 143, 203, 0.5)
+        rgba(0, 143, 203, 0.6),
+        rgba(0, 143, 203, 0.6)
       ),
       url('/butterfly-hero-mobile.jpg');
+    background-position: 25% 55%;
   }
 }

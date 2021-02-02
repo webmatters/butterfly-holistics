@@ -2,13 +2,13 @@ import Link from 'next/link'
 
 function WhyButterfly() {
   return (
-    <div className="mt-10 mb-10 py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
+    <div className="mt-10 mb-10 md:py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+        <div className="text-center">
           <h2 className="text-base text-primary font-semibold tracking-wide uppercase">
             Why Butterfly Holistics?
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-700 sm:text-4xl font-serif">
+          <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-700 sm:text-4xl">
             Expert care from a Master Practitioner
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -22,7 +22,7 @@ function WhyButterfly() {
             <img src="valerie-remhoff.jpg" alt="Valerie Remhoff" />
           </div>
           <div className="col-span-2 mt-4">
-            <p className="mb-8">
+            <p className="mb-8  text-gray-500 text-lg">
               Valerie Remhoff is the owner of Butterfly Holistics. She is an
               experienced kinesiologist, Reiki master teacher, IKC Certified
               Touch for Health instructor/consultant, author, and speaker. She
