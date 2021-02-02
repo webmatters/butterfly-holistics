@@ -20,6 +20,7 @@ function PageLayout({ children }) {
       </Head>
 
       <div
+        className="min-h-screen"
         style={{
           backgroundImage:
             'linear-gradient(to bottom, rgb(2, 99, 146), rgb(189, 214, 232), rgb(2, 99, 146))',
