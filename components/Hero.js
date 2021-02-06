@@ -12,7 +12,7 @@ function Hero() {
       // }}
     >
       <div className="w-2/3 pl-12">
-        <p className="text-4xl tracking-wide text-tertiary animate-move-in-left">
+        <p className="text-4xl tracking-wide text-white animate-move-in-left">
           Take Control of Your Wellbeing
         </p>
         <p className="mt-3 uppercase text-lg tracking-wide animate-move-in-right">
@@ -26,12 +26,12 @@ function Hero() {
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-white md:transition duration-500 ease-in-out bg-secondary transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn"
             >
-              FREE CLASS
+              Free Class
             </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3 animate-move-in-bottom">
             <Link href="/appointments">
-              <a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-secondary bg-primary-lightest transition duration-500 ease-in-out transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn">
+              <a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-white bg-primary transition duration-500 ease-in-out transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn">
                 Schedule Now
               </a>
             </Link>

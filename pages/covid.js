@@ -7,7 +7,7 @@ function Covid() {
   const title = 'COVID-19'
   const subtitle = 'Safety Policies and Procedures'
   const intro =
-    'In order to ensure the safety and well-being of our patients and staff, in conjunction with Acupuncture Wellness Connection, the following policies and procedures are in effect'
+    'In order to ensure the safety and well-being of our clients and staff, in conjunction with Acupuncture Wellness Connection, the following policies and procedures are in effect'
 
   return (
     <PageLayout>
