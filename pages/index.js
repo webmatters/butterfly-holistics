@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import Head from 'next/head'
 
 import PageLayout from 'components/PageLayout'
+import CovidBanner from 'components/CovidBanner'
 import Hero from 'components/Hero'
 import WhyButterfly from 'components/WhyButterfly'
 import Divider from 'components/Divider'
@@ -9,14 +11,19 @@ import Testimonials from 'components/Testimonials'
 import ClassesSection from 'components/ClassesSection'
 
 function Home() {
+  const [bannerOpen, setBannerOpen] = useState(true)
+
   return (
     <>
       <Head>
         <title>Butterfly Holistics</title>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Covid Banner */}
+      {bannerOpen && (
+        <CovidBanner toggleBanner={setBannerOpen} bannerOpen={bannerOpen} />
+      )}
       <PageLayout>
         <Hero />
         <WhyButterfly />

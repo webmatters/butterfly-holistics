@@ -56,31 +56,19 @@ function Footer() {
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
-            <p className="mt-4 text-base text-gray-500">
-              The latest information and resources, sent to your inbox.
+            <p className="mt-1 text-base text-gray-500">
+              Receive our popular Self-Care 101 class.
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="emailAddress" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="emailAddress"
-                id="emailAddress"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full bg-secondary flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:secondary focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <div className="mt-6">
+              <a
+                href="https://mailchi.mp/0feb14b51109/subscribe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary border border-transparent rounded-full px-8 py-2 text-base font-medium text-white hover:secondary "
+              >
+                <span className="leading-none">Subscribe</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -117,64 +105,5 @@ function Footer() {
     </footer>
   )
 }
-
-{
-  /*
-      This example requires Tailwind CSS v2.0+ 
-      
-      This example requires some changes to your config:
-      
-      ```
-      // tailwind.config.js
-      module.exports = {
-        // ...
-        plugins: [
-          // ...
-          require('@tailwindcss/forms'),
-        ]
-      }
-      ```
-    */
-}
-
-// <footer className="bg-gray-100">
-//   <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-//     <nav
-//       className="-mx-5 -my-2 flex flex-wrap justify-center"
-//       aria-label="Footer"
-//     >
-//       {renderLinks()}
-//     </nav>
-//     <div className="mt-8 flex justify-center space-x-6">
-//       <p></p>
-//       <a
-//         href="https://www.facebook.com/balanceandheal"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//         className="text-gray-400 hover:text-gray-500"
-//       >
-//         <span className="sr-only">Facebook</span>
-//         <svg
-//           className="h-6 w-6"
-//           fill="currentColor"
-//           viewBox="0 0 24 24"
-//           aria-hidden="true"
-//         >
-//           <path
-//             fillRule="evenodd"
-//             d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-//             clipRule="evenodd"
-//           />
-//         </svg>
-//       </a>
-//     </div>
-// <p className="mt-8 text-center text-base text-gray-400">
-//   &copy; {new Date().getFullYear()} Butterfly Holistics - All rights
-//   reserved.
-// </p>
-//   </div>
-// </footer>
-// )
-// }
 
 export default Footer

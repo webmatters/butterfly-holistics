@@ -20,16 +20,19 @@ function Hero() {
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-full animate-move-in-bottom">
-            <Link href="/appointments">
-              <a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-white md:transition duration-500 ease-in-out bg-secondary transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn">
-                Schedule Now
-              </a>
-            </Link>
+            <a
+              href="https://mailchi.mp/0feb14b51109/subscribe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-white md:transition duration-500 ease-in-out bg-secondary transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn"
+            >
+              FREE CLASS
+            </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3 animate-move-in-bottom">
-            <Link href="/services">
+            <Link href="/appointments">
               <a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-secondary bg-primary-lightest transition duration-500 ease-in-out transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn">
-                Learn More
+                Schedule Now
               </a>
             </Link>
           </div>
