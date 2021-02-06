@@ -36,7 +36,7 @@ function WhyButterfly() {
             </p>
             <div className="flex justify-center">
               <Link href="/about">
-                <a className="px-8 py-2 border border-transparent text-base font-medium rounded-full text-white bg-secondary md:py-2 md:text-lg md:px-10 btn">
+                <a className="px-8 py-2 border border-transparent text-base font-medium rounded-full text-white bg-primary md:py-2 md:text-lg md:px-10 btn">
                   Learn More
                 </a>
               </Link>
