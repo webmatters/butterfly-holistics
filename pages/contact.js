@@ -1,10 +1,17 @@
 import React from 'react'
 
 import PageLayout from 'components/PageLayout'
+import PageHeader from 'components/PageHeader'
 
 function Contact() {
+  const title = 'Contact'
+  const subtitle = "We'd Love to Hear from You"
+  const intro =
+    "You can use the links above to directly schedule an appointment or enroll in a class. If you'd like to receive articles and updates from us, subscribe to our newsletter below. If you have any questions, feel free to contact us using any of the channels below."
+
   return (
     <PageLayout>
+      <PageHeader title={title} subtitle={subtitle} intro={intro} />
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="divide-y-2 divide-gray-200">
@@ -56,8 +63,15 @@ function Contact() {
                   </h3>
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>www.facebook.com/balanceandheal/</dd>
+                      <dt className="sr-only">Facebook Link</dt>
+                      <a
+                        href="https://www.facebook.com/balanceandheal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-gray-400"
+                      >
+                        <dd>www.facebook.com/balanceandheal/</dd>
+                      </a>
                     </div>
                   </dl>
                 </div>

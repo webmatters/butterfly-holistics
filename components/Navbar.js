@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Transition } from '@headlessui/react'
-import CovidBanner from './CovidBanner'
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false)
-  const [bannerOpen, setBannerOpen] = useState(true)
 
   const navLinks = [
     { id: '1', path: '/services', name: 'Services' },
@@ -43,11 +41,6 @@ function Navbar() {
   return (
     <div className="relative bg-white">
       <div className="max-w-7xl mx-auto ">
-        {/* Covid Banner */}
-        {bannerOpen && (
-          <CovidBanner toggleBanner={setBannerOpen} bannerOpen={bannerOpen} />
-        )}
-
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center  py-4 md:space-x-10">
             {/* Brand logo */}
