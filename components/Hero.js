@@ -32,7 +32,7 @@ function Hero() {
           <div className="mt-3 sm:mt-0 sm:ml-3 animate-move-in-bottom">
             <Link href="/appointments">
               <a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-full text-white bg-primary transition duration-500 ease-in-out transform hover:scale-105 md:py-3 md:text-lg md:px-10 btn">
-                Schedule Now
+                Appointments
               </a>
             </Link>
           </div>
