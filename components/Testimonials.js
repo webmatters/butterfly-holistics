@@ -1,4 +1,83 @@
+import { useState } from 'react'
+
 import Testimonial from './Testimonial'
+
+export default function Testimonials() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(1)
+
+  const renderCurrentTestimonials = () => {
+    return testimonials
+      .filter(
+        testimonial =>
+          testimonial.id === currentTestimonial ||
+          testimonial.id === currentTestimonial + 1
+      )
+      .map(testimonial => (
+        <Testimonial
+          key={testimonial.id}
+          text={testimonial.text}
+          image={testimonial.image}
+          name={testimonial.name}
+          location={testimonial.location}
+        />
+      ))
+  }
+
+  return (
+    <section className="bg-primary">
+      <div className="max-w-7xl mx-auto pb-12 md:pb-16 md:grid md:grid-cols-2 md:px-6 lg:px-16 text-center relative">
+        {/* Left Chevron - Back button*/}
+        {currentTestimonial > 1 && (
+          <button
+            onClick={() => setCurrentTestimonial(currentTestimonial - 2)}
+            className="absolute inset-y-0 left-2 focus:outline-none"
+          >
+            <svg
+              className="h-16 w-16 text-white opacity-25"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+        )}
+
+        {/* Testimonials */}
+        {renderCurrentTestimonials()}
+
+        {/* Right Chevron - Advance button*/}
+        {currentTestimonial < testimonials.length - 1 && (
+          <button
+            onClick={() => setCurrentTestimonial(currentTestimonial + 2)}
+            className="absolute inset-y-0 right-2 focus:outline-none"
+          >
+            <svg
+              className="h-16 w-16 text-white  opacity-25"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        )}
+      </div>
+    </section>
+  )
+}
 
 const testimonials = [
   {
@@ -34,21 +113,3 @@ const testimonials = [
     location: 'Holly Springs, NC',
   },
 ]
-
-export default function Testimonials() {
-  return (
-    <section className="bg-primary">
-      <div className="max-w-7xl mx-auto pb-12 md:pb-16 md:grid md:grid-cols-2 md:px-6 lg:px-16 text-center">
-        {testimonials.map(testimonial => (
-          <Testimonial
-            key={testimonial.id}
-            text={testimonial.text}
-            image={testimonial.image}
-            name={testimonial.name}
-            location={testimonial.location}
-          />
-        ))}
-      </div>
-    </section>
-  )
-}

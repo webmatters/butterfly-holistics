@@ -2,7 +2,7 @@ function Testimonial({ text, image, name, location }) {
   return (
     <div>
       <div className="pt-6 lg:pt-12 px-4 sm:px-6 md:flex md:flex-col md:pt-16 md:pl-0 md:pr-10 md:border-primary-dark lg:px-16">
-        <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+        <blockquote className="mt-6 md:flex-grow md:flex md:flex-col animate-move-in-right">
           <div className="relative text-base font-medium text-white md:flex-grow">
             <svg
               className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-primary-light"
